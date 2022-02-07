@@ -5,6 +5,7 @@ import Home from "./pages/Home"
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 import NotFound from './pages/NotFound';
+import EducatorDashboard from './pages/EducatorDashboard';
 
 function App() {
   
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path='/register' exact>
           <Register />
+        </Route>
+        <Route path='/user/dashboard'>
+          <EducatorDashboard />
         </Route>
         <Route path="/404" >
           <NotFound />
