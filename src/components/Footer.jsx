@@ -7,7 +7,7 @@ const Footer = () =>{
 
   return(
     <Wrap>
-      <div className="container-fluid">
+      <div className="container-fluid footer">
         <div className="row">
           <div className="col-md-3 col-sm-12">
             <div className="logo-div d-flex align-item-center">

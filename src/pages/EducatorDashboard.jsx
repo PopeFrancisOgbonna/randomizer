@@ -4,6 +4,8 @@ import images from "../components/util/img";
 import {Route, Switch} from "react-router-dom";
 import Dashboard from "../components/Dashboard";
 import Footer from "../components/Footer";
+import LoadQuestion from "../components/LoadQuestion";
+import Questions from "../components/Questions";
 
 
 const Nav = () => {
@@ -43,17 +45,17 @@ const NavWrap = styled.div `
 const EducatorDashboard = () => {
 
   return(
-    <Wrap>
+    <Wrap className="container-fluid">
       <Nav />
       <Switch>
         <Route path="/user/dashboard" exact>
           <Dashboard />
         </Route>
         <Route path="/user/dashboard/upload" exact>
-          <h1>Upload file</h1>
+          <LoadQuestion />
         </Route>
         <Route path="/user/dashboard/randomize" exact>
-          <h1>Radomize Questions</h1>
+          <Questions />
         </Route>
       </Switch>
       <Footer />
@@ -63,5 +65,5 @@ const EducatorDashboard = () => {
 export default EducatorDashboard;
 
 const Wrap = styled.div `
-
+  
 `;
